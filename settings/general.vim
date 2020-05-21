@@ -1,5 +1,5 @@
 set nocompatible " off when a vimrc is found
-filetype on
+filetype plugin indent on
 syntax on
 let mapleader=" "
 
@@ -39,14 +39,6 @@ set fillchars+=vert:│
 let tw = 79
 
 autocmd BufNewFile,BufRead *.coveragerc set syntax=dosini
-filetype plugin indent on
-
-" JavaScript tabs
-autocmd FileType javascript setlocal ts=2 sts=2 sw=2
-
-
-" Ignore certain pep rules
-let g:pymode_lint_ignore = ["E501", "W",]
 
 " Disable tmux navigator when zooming the Vim pane
 let g:tmux_navigator_disable_when_zoomed = 1
